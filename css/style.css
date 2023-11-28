@@ -70,19 +70,20 @@ header img {
 
 .principal img{
     width: 100%;
-    height: 600px;
+    height: auto;
+    max-height: 600px;
     object-fit: cover; /* Hace zoom para cubrir completamente el contenedor sin distorsionar la relación de aspecto */
     object-position: center center; /* Centra la imagen en el contenedor */
 }
 
 .imagenes-chicas {
     display: flex;
-    width: 100%; /* Ocupa todo el ancho de la página */
+    flex-wrap: wrap; /* Ocupa todo el ancho de la página */
 }
 
 .imagenes-chicas img {
     width: 33.33%; /* Cada imagen ocupa 1/3 del ancho del contenedor */
-    height: 360px;
+    height: auto;
 }
 
 .pag-principal{
