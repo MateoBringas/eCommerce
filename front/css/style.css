@@ -29,17 +29,20 @@ nav ul{
     font-size: 23px;
     background-color: #D2B48C;
     display: flex;
+    align-items: center;
     overflow: hidden;
     justify-content: center;
+    height: 50px;
 
 }
 
 nav ul img{
     height: 50px;
     position: relative;
-    top: 3px ;
+    top: 0;
     right: 250px;
 }
+
 
 a {
     display: block;
@@ -50,7 +53,6 @@ a {
   }
 
 a:hover {
-    background-color: #ddd;
     color: #333;}
 
 header img {
@@ -137,6 +139,14 @@ header img {
     height: 300px;
 }
 
+#checkout{
+    background-color: #8B735B;
+    display: flex;
+    justify-content: end;
+
+
+}
+
 .add{
     border: none;
     font-size: 16px;
@@ -207,6 +217,7 @@ header img {
     font-size: 85px;
     font-family: 'Libre Baskerville', serif;
 }
+
 .map-container{
     position: relative;
     
@@ -224,3 +235,15 @@ header img {
     
 }
 
+#cuenta_carrito{
+    font-size: 20px;
+    height: 20px;
+    background-color: #8B4513;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+
+}
