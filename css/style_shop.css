@@ -129,4 +129,11 @@ a:hover {
     font-size: 20px;
     margin-top: auto;
     margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: #D2B48C;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
