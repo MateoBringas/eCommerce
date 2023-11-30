@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablito Pescador</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap">
     <script src="./scripts/main.js"></script>
-    
+
 </head>
+
 <body>
-        <header>
-            <p>Envios a todo el pais</p>
-        </header>
+    <header>
+        <p>Envios a todo el pais</p>
+    </header>
 
     <main>
         <nav id="Nav">
@@ -29,106 +31,106 @@
             </ul>
         </nav>
 
-            <div class="principal">
-                <img src="./images/cazuelas.jpg" alt="principal">
-            </div>
+        <div class="principal">
+            <img src="./images/cazuelas.jpg" alt="principal">
+        </div>
 
-            <div class="imagenes-chicas">
-                <img src="./images/Cuencos2.jpg" alt="Imagen 1">
-                <img src="./images/mates.jpg" alt="Imagen 2">
-                <img src="./images/platos.jpg" alt="Imagen 3">
-            </div>
+        <div class="imagenes-chicas">
+            <img src="./images/Cuencos2.jpg" alt="Imagen 1">
+            <img src="./images/mates.jpg" alt="Imagen 2">
+            <img src="./images/platos.jpg" alt="Imagen 3">
+        </div>
 
-            <section class="pag-principal">
-                    <div class="texto-principal">
-                        <p class="texto-primero">VENTA MAYORISTA Y MINORISTA </p>
-                        <h2>Productos Destacados</h2>
-                        <p>Consulte por stock - Envíos a todo el país.</p>
-                    </div>
-                    <div id = "products" class="products">
-                        <div class="product-container">
-                            <h3> Gota</h3>
-                            <img src="./images/cazuelas.jpg">
-                            <h2 class="precio">$100</h2>
-                            <button class="add">Agregar</button>
-                        </div>
-                        <div class="product-container">
-                            <h3> Gota</h3>
-                            <img src="./images/cazuelas.jpg">
-                            <h2 class="precio">$100</h2>
-                            <button class="add">Agregar</button>
-                        </div>
-                        <div class="product-container">
-                            <h3> Gota</h3>
-                            <img src="./images/cazuelas.jpg">
-                            <h2 class="precio">$100</h2>
-                            <button class="add">Agregar</button>
-                        </div>
-                    </div>
-                    <button class="ver-mas">Ver mas productos</button>
-            </section>
-            
-            <section class="pag-principal">
-                <div class="texto-principal">
-                    <p>VENTA MAYORISTA Y MINORISTA </p>
-                    <h2>Promociones Destacadas</h2>
-                    <p>Consulte por stock - Envíos a todo el país.</p>
+        <section class="pag-principal">
+            <div class="texto-principal">
+                <p class="texto-primero">VENTA MAYORISTA Y MINORISTA </p>
+                <h2>Productos Destacados</h2>
+                <p>Consulte por stock - Envíos a todo el país.</p>
+            </div>
+            <div id="products" class="products">
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">$100</h2>
+                    <button class="add">Agregar</button>
                 </div>
-
-                <div id ="promociones" class="products">
-                    <div class="product-container">
-                        <h3> Gota</h3>
-                        <img src="./images/cazuelas.jpg">
-                        <h2 class="precio">1000</h2>
-                        <button class="add">Agregar</button>
-                    </div>
-                    <div class="product-container">
-                        <h3> Gota</h3>
-                        <img src="./images/cazuelas.jpg">
-                        <h2 class="precio">1000</h2>
-                        <button class="add">Agregar</button>
-                    </div>
-                    <div class="product-container">
-                        <h3> Gota</h3>
-                        <img src="./images/cazuelas.jpg">
-                        <h2 class="precio">1000</h2>
-                        <button class="add">Agregar</button>
-                    </div>
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">$100</h2>
+                    <button class="add">Agregar</button>
                 </div>
-                <button class="ver-mas">Ver mas productos</button>
-            </section>
-
-            <section id="contacto">
-                <p>Ventas unicamente online</p>
-                <h2>Nuestra Ubicación</h2>
-                <p>Belgrano 3118, Villa Dolores, Córdoba</p>
-                <a href="tel:+543544447323">Tel.: (54) 3544-447323</a>
-            </section>
-
-    <div class="map-container">
-        <div id="map">
-            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-            <script>
-                // Coordenadas de la ubicación de tu negocio
-                var myLatLng = L.latLng(-31.95213, -65.15086);
-        
-                // Crear un mapa centrado en la ubicación de tu negocio
-                var map = L.map('map').setView(myLatLng, 15);
-        
-                // Agregar una capa de mapa (puedes cambiar "mapbox/streets-v11" por otro proveedor)
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '© OpenStreetMap contributors'
-                }).addTo(map);
-        
-                // Agregar un marcador en la ubicación de tu negocio
-                L.marker(myLatLng).addTo(map)
-                    .bindPopup('Pablito Pescador')
-                    .openPopup();
-            </script>
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">$100</h2>
+                    <button class="add">Agregar</button>
+                </div>
             </div>
-    </div>
-    <footer></footer>
+            <button class="ver-mas"> <a href="./pages/matesybombillas.html">Ver mas productos</a></button>
+        </section>
+
+        <section class="pag-principal">
+            <div class="texto-principal">
+                <p>VENTA MAYORISTA Y MINORISTA </p>
+                <h2>Promociones Destacadas</h2>
+                <p>Consulte por stock - Envíos a todo el país.</p>
+            </div>
+
+            <div id="promociones" class="products">
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">1000</h2>
+                    <button class="add">Agregar</button>
+                </div>
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">1000</h2>
+                    <button class="add">Agregar</button>
+                </div>
+                <div class="product-container">
+                    <h3> Gota</h3>
+                    <img src="./images/cazuelas.jpg">
+                    <h2 class="precio">1000</h2>
+                    <button class="add">Agregar</button>
+                </div>
+            </div>
+            <button class="ver-mas"> <a href="./pages/matesybombillas.html">Ver mas productos</a></button>
+        </section>
+
+        <section id="contacto">
+            <p>Ventas unicamente online</p>
+            <h2>Nuestra Ubicación</h2>
+            <p>Belgrano 3118, Villa Dolores, Córdoba</p>
+            <a href="tel:+543544447323">Tel.: (54) 3544-447323</a>
+        </section>
+
+        <div class="map-container">
+            <div id="map">
+                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+                <script>
+                    // Coordenadas de la ubicación de tu negocio
+                    var myLatLng = L.latLng(-31.95213, -65.15086);
+
+                    // Crear un mapa centrado en la ubicación de tu negocio
+                    var map = L.map('map').setView(myLatLng, 15);
+
+                    // Agregar una capa de mapa (puedes cambiar "mapbox/streets-v11" por otro proveedor)
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+
+                    // Agregar un marcador en la ubicación de tu negocio
+                    L.marker(myLatLng).addTo(map)
+                        .bindPopup('Pablito Pescador')
+                        .openPopup();
+                </script>
+            </div>
+        </div>
+        <footer></footer>
 </body>
 </main>
-</html>
 
+</html>
