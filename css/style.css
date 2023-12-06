@@ -8,17 +8,21 @@ main{
 
 }
 
-header{
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        background-color: #8B4513 ;
-        color: #FFF8DC;
-        height: 30px;
+header {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #8B4513;
+    color: #FFF8DC;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1001; /* Asegura que el header esté por encima del nav */
 }
 
-nav{
-    position: fixed;
+nav {
+    position: sticky;
+    top: 30px; /* Ajusta según la altura del header */
     width: 100%;
     z-index: 1000;
 }
@@ -64,10 +68,9 @@ a:hover {
     overflow: hidden;
 }
 
-.principal img{
-    width: 100%;
+.principal img {
+    max-width: 100%;
     height: auto;
-    max-height: 600px;
     object-fit: cover; /* Hace zoom para cubrir completamente el contenedor sin distorsionar la relación de aspecto */
     object-position: center center; /* Centra la imagen en el contenedor */
 }

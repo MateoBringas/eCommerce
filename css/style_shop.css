@@ -135,6 +135,9 @@ a:hover {
     padding: 10px;
     border: none;
     border-radius: 10px;
+}
+
+.add_product:hover{
     cursor: pointer;
 }
 
