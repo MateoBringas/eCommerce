@@ -70,7 +70,6 @@ a:hover {
 
 .principal img {
     max-width: 100%;
-    height: auto;
     object-fit: cover; /* Hace zoom para cubrir completamente el contenedor sin distorsionar la relación de aspecto */
     object-position: center center; /* Centra la imagen en el contenedor */
 }
